@@ -812,3 +812,23 @@ if (copyWrappers) {
 	});
 }
 
+// single page gallery
+
+const galleryWrapper = document.getElementById('product-gallery');
+
+if (galleryWrapper) {
+	lightGallery(galleryWrapper, {
+		speed: 500,
+		download: false,
+		getCaptionFromTitleOrAlt: false,
+		hideScrollbar: true,
+		selector: '[data-gallery-wrapper]',
+		mobileSettings: {
+			controls: false,
+			showCloseIcon: true,
+			download: false,
+		},
+		preload: 4,
+	});
+}
+
