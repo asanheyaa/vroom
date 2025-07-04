@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Vroom">
-    <link rel="stylesheet" href="css/main-styles.css">
     <link href="https://fonts.googleapis.com/css?family=Inter:regular,500,600&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="css/lightgallery-bundle.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/css/lightgallery.min.css">
+    <link rel="stylesheet" href="css/main-styles.css">
     <title>Vroom</title>
 </head>
 
@@ -167,19 +170,45 @@
                             </span>
                         </a>
                     </div>
-                    <div class="gallery-single-product">
-                        <div class="gallery-single-product__main-image ibg">
-                            <img src="img/single-product/gallery/gallery-image_01.jpg" loading="lazy" alt="car">
-                        </div>
+                    <div class="gallery-single-product" id="product-gallery">
+                        <!-- You can insert images of any size, they will automatically adapt to the required sizes -->
+                        <button type="button" class="gallery-single-product__main-image ibg"
+                            data-src="img/single-product/gallery/gallery-image_01.jpg" data-gallery-wrapper>
+                            <!-- Add the data-gallery-wrapper and data-src=“image url” attributes to each image wrapper -->
+                            <img src="img/single-product/gallery/gallery-image_01.jpg" alt="car">
+                        </button>
                         <div class="gallery-single-product__items">
-                            <div class="gallery-single-product__item ibg">
-                                <img src="img/single-product/gallery/gallery-image_02.jpg" loading="lazy" alt="car">
-                            </div>
-                            <div class="gallery-single-product__item gallery-single-product__item-more ibg">
-                                <button type="button" class="gallery-single-product__button">
+                            <button type="button" class="gallery-single-product__item  ibg"
+                                data-src="img/single-product/gallery/gallery-image_02.jpg" data-gallery-wrapper>
+                                <!-- Add the data-gallery-wrapper and data-src=“image url” attributes to each image wrapper -->
+                                <img src="img/single-product/gallery/gallery-image_02.jpg" alt="car">
+                            </button>
+                            <button type="button"
+                                class="gallery-single-product__item gallery-single-product__item-more ibg"
+                                data-src="img/single-product/gallery/gallery-image_03.jpg" data-gallery-wrapper>
+                                <!-- Add the data-gallery-wrapper and data-src=“image url” attributes to each image wrapper -->
+                                <span type="button" class="gallery-single-product__button">
                                     Show all photos
-                                </button>
-                                <img src="img/single-product/gallery/gallery-image_03.jpg" loading="lazy" alt="car">
+                                </span>
+                                <img src="img/single-product/gallery/gallery-image_03.jpg" alt="car">
+                            </button>
+                        </div>
+                        <div class="gallery-single-product__items-hide">
+                            <div class="gallery-single-product__item-hide"
+                                data-src="img/single-product/gallery/gallery-image_04.avif" data-gallery-wrapper>
+                                <img src="img/single-product/gallery/gallery-image_04.avif" alt="car">
+                            </div>
+                            <div class="gallery-single-product__item-hide"
+                                data-src="img/single-product/gallery/gallery-image_05.jpg" data-gallery-wrapper>
+                                <img src="img/single-product/gallery/gallery-image_05.jpg" alt="car">
+                            </div>
+                            <div class="gallery-single-product__item-hide"
+                                data-src="img/single-product/gallery/gallery-image_06.jpg" data-gallery-wrapper>
+                                <img src="img/single-product/gallery/gallery-image_06.jpg" alt="car">
+                            </div>
+                            <div class="gallery-single-product__item-hide"
+                                data-src="img/single-product/gallery/gallery-image_07.jpg" data-gallery-wrapper>
+                                <img src="img/single-product/gallery/gallery-image_07.jpg" alt="car">
                             </div>
                         </div>
                     </div>
@@ -788,31 +817,31 @@
 
                             </ul>
                         </div>
-                    <div class="footer__socials">
-                        <h2 class="footer__label">Social</h2>
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <a href="" aria-label="x" class="footer__link">
-                                    <img src="img/icons/socials/social-icon_01.svg" loading="lazy" alt="footer">
-                                </a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="" aria-label="instagram" class="footer__link">
-                                    <img src="img/icons/socials/social-icon_02.svg" loading="lazy" alt="footer">
-                                </a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="" aria-label="facebook" class="footer__link">
-                                    <img src="img/icons/socials/social-icon_03.svg" loading="lazy" alt="footer">
-                                </a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="" aria-label="youtube" class="footer__link">
-                                    <img src="img/icons/socials/social-icon_04.svg" loading="lazy" alt="footer">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                        <div class="footer__socials">
+                            <h2 class="footer__label">Social</h2>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a href="" aria-label="x" class="footer__link">
+                                        <img src="img/icons/socials/social-icon_01.svg" loading="lazy" alt="footer">
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="" aria-label="instagram" class="footer__link">
+                                        <img src="img/icons/socials/social-icon_02.svg" loading="lazy" alt="footer">
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="" aria-label="facebook" class="footer__link">
+                                        <img src="img/icons/socials/social-icon_03.svg" loading="lazy" alt="footer">
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="" aria-label="youtube" class="footer__link">
+                                        <img src="img/icons/socials/social-icon_04.svg" loading="lazy" alt="footer">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="navs-footer">
                         <nav class="navs-footer__menu">
@@ -898,7 +927,17 @@
             </div>
         </footer>
     </div>
+    <script src="js/lightgallery.min.js"></script>
     <script src="js/script.js"></script>
+    <script type="text/javascript">
+        lightGallery(document.getElementById('product-gallery'), {
+            speed: 500,
+            // mode: 'lg-fade',
+             download: false,
+            getCaptionFromTitleOrAlt: false,
+            selector: '[data-gallery-wrapper]',
+        });
+    </script>
 </body>
 
 </html>
